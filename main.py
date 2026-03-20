@@ -3,20 +3,12 @@ from data_loader import get_train_test_data
 from model import train_model
 from evaluate import evaluate_model
 def train_and_evaluate():
-    """
-    Load data, train the model, and evaluate it.
-    Returns the trained model.
-    """
     X_train, X_test, y_train, y_test = get_train_test_data()
     model = train_model(X_train, y_train)
     print("\nModel trained successfully.")
     evaluate_model(model, X_test, y_test)
     return model
 def predict_for_user(model):
-    """
-    Ask the user for feature values and predict whether they will
-    complete the habit today.
-    """
     try:
         sleep = float(input("Hours of sleep last night (e.g., 7): "))
         screen = float(input("Screen time in hours yesterday (e.g., 4): "))
