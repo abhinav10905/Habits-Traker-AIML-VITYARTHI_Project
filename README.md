@@ -1,33 +1,33 @@
 # Habits-Traker-AIML-VITYARTHI_Project
 
 ## 1. Introduction
-This project is a simple **machine learning classifier** that predicts whether a user is likely to complete a habit on a given day, based on:
+This project is a simple **machine learning classifier** that predicts whether a user is likely to complete a habit on a given day based on:
 - Hours of sleep
 - Screen time
 - Whether the habit was done yesterday
 - Day of the week
 
-The focus is on understanding the basic AIML pipeline: data preparation, model training, and evaluation.
+This project is about understanding the basic **AIML** concepts: data preparation, model training, and model evaluation.
 
 ---
 
 ## 2. Problem Statement
-Maintaining daily habits is difficult. Factors such as lack of sleep, high screen time, and inconsistent behaviour can affect whether a habit is completed. Predicting habit completion can help the user become aware of their patterns and take corrective actions.
+It is hard to maintain daily habits. For instance, lack of sleep, excessive screen time, or irregular behavior could influence the chances of completing a daily habit. Being able to predict daily habit completion could help the user develop self-awareness about their daily behaviors.
 
-This project uses a small synthetic dataset to classify each day as:
-- `completed_today = 1` (habit likely completed), or
-- `completed_today = 0` (habit not completed).
+This project is based on a small synthetic dataset to predict whether a habit will be completed or not by classifying it as:
+- `completed_today = 1` (i.e., the habit is likely completed), or
+- `completed_today = 0` (i.e., the habit is not completed).
 
 ---
 
 ## 3. Objectives
-- Build a **binary classification** model using Logistic Regression.
-- Learn how to:
-  - Load data from CSV using pandas.
-  - Split into training and test sets.
-  - Train and evaluate a model with scikit-learn.
-  - Use the trained model to make predictions for new input.
-
+- Develop a **Binary Classification** model using **Logistic Regression**.
+- Learn the following:
+  - How to load data from a CSV file using pandas.
+  - How to split data into training sets.
+  - How to evaluate a model using scikit-learn.
+  - How to use the model to predict values for new data.
+  
 ---
 
 ## 4. Functional Requirements
