@@ -6,11 +6,11 @@ It is difficult for students to know in advance whether they are likely to compl
 There is a need for a basic predictive model that, using past data, can estimate whether a habit will be completed today.
 
 ## Scope of the Project
-This project focuses on a single binary classification task:
-- Input: simple daily features (sleep hours, screen time hours, whether the habit was done yesterday, day of week).
-- Output: a prediction whether the habit will be completed today (1 = yes, 0 = no).
+This project will involve a single binary classification task. This includes the following:
+- Input: simple daily features like the number of hours slept, the number of hours spent on the screen, if the habit was done the day before, and the day of the week.
+- Output: a prediction if the habit will be done today or not (1 = yes, 0 = no).
 
-The model is trained on a small CSV dataset and is intended for demonstration and learning, not for real-life medical or psychological advice.
+This model will be trained using a small CSV file and will be used for learning purposes only. This model will not be used for real-life medical or psychological purposes.
 
 ## Target Users
 - Students who want to understand their habit patterns.
@@ -21,8 +21,8 @@ The model is trained on a small CSV dataset and is intended for demonstration an
   - Making predictions
 
 ## High-Level Features
-- Load dataset from `data/habits_ml.csv`
-- Split dataset into training and testing sets
+- Load the dataset from the `data/habits_ml.csv` file
+- Split the data into training and testing data
 - Train a Logistic Regression classifier
-- Evaluate model performance using accuracy and classification report
-- Accept user input and predict whether the habit will be completed for that day
+- Test the model using the accuracy metric and the classification report
+- Accept user input and make a prediction if the habit will be done for the day
